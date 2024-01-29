@@ -1,6 +1,6 @@
 # [DATAKOMMUNIKATION 1 (DVGB02)]
 
-This repository contains projects and coursework from the [DATASTRUKTURER OCH ALGORITMER] course (coded as [DVGB03]).
+This repository contains projects and coursework from the DATAKOMMUNIKATION 1 course (coded as [DVGB02]).
 
 :link: https://www.kau.se/utbildning/program-och-kurser/kurser/DVGB02
 
