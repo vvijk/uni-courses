@@ -17,8 +17,20 @@ Here is a list of courses included in this repository:
       * Functionality and protocols in different layers of the TCP/IP stack.
       * Wired and wireless local networks.
         
-3. ** **
-   - Description:
+3. **Javascript för webbutveckling (ISGB15)**
+   - Description:The course explores the effective use of JavaScript for creating interactive and dynamic web pages. Key topics include:
+      * JavaScript Fundamentals:
+           - Application of methods and properties in classes and objects.
+           - Creation of custom functions for enhanced interactivity.
+      * Event Handling:
+           - Implementation of event-driven scenarios for function triggering.
+      * HTML Form Validation:
+           - Utilization of JavaScript for validating HTML forms.
+      * DOM Manipulation:
+           - Understanding the role of the Document Object Model (DOM).
+           - Dynamic alteration of HTML and CSS using DOM.
+             
+This course was a hands-on journey, mixing lectures with practical development. The real gem was crafting a Tic-Tac-Toe game through four engaging labs, bringing the theoretical concepts togheter in a fun and interactive way.
 
 > [!NOTE]
 > Skeleton code was provided to us as a starting point in some of the assignments, but the main logic and implementations were developed either entirely by me or in collaboration with my lab group.
