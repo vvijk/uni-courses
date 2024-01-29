@@ -30,5 +30,37 @@ If checked, allowed 5 seconds for each move; otherwise, players could take their
 If a player did not make a move within the time limit, the turn automatically passed to the opponent.
 Ensured the timer event concluded on game victory.
 
+# Getting Started
+
+Follow these steps to get the game up and running:
+
+## Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+## Getting Started
+
+Follow these steps to get the Tic-Tac-Toe game up and running:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/vvijk/uni-courses.git
+cd tic-tac-toe
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Install live-server (if not installed)
+```bash
+npm install -g live-server
+```
+### 4. Run the Game
+```bash
+live-server
+```
+
 > [!NOTE]
 > Skeleton code was provided to us as a starting point, but the main logic and implementations were developed by me.
