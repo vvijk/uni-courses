@@ -44,7 +44,7 @@ Follow these steps to get the Tic-Tac-Toe game up and running:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/tic-tac-toe.git
+git clone https://github.com/vvijk/uni-courses.git
 cd tic-tac-toe
 ```
 
