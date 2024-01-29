@@ -1,7 +1,7 @@
 
 # [PROGRAMSPRÅK (DVGC01)]
 
-This repository contains projects and coursework from the PROGRAMSPRÅK course (coded as [DVGB03]).
+This repository contains projects and coursework from the PROGRAMSPRÅK course (coded as [DVGC01]).
 
 :link: https://www.kau.se/utbildning/program-och-kurser/kurser/DVGC01
 
