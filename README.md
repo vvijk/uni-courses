@@ -19,7 +19,7 @@ Here is a list of courses included in this repository:
         
 3. **Javascript för webbutveckling (ISGB15)** [🔗](https://github.com/vvijk/uni-courses/tree/main/ISGB15)
    - **Course Overview:** Explore effective JavaScript usage for creating interactive and dynamic web pages. Key topics include JavaScript fundamentals, event handling, HTML form validation, and DOM manipulation
-  - **Labs:** The course offered a hands-on journey with engaging labs, culminating in the creation of a Tic-Tac-Toe game. This practical application brought theoretical concepts together in a fun and interactive way.
+   - **Labs:** The course offered a hands-on journey with engaging labs, culminating in the creation of a Tic-Tac-Toe game. This practical application brought theoretical concepts together in a fun and interactive way.
    
    ---
    
