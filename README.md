@@ -20,7 +20,7 @@ Here is a list of courses included in this repository:
 3. ** **
    - Description:
 
-> **[!NOTE]**
+> [!NOTE]
 > Skeleton code was provided to us as a starting point in some of the assignments, but the main logic and implementations were developed either entirely by me or in collaboration with my lab group.
 
 ## Getting Started
