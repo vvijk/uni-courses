@@ -19,15 +19,6 @@ During this lab, I implemented the following:
 * Extended the AVL tree in src/avl.py, leveraging inherited BST methods.
 * Implemented AVL-specific methods: balance, slr, srr, dlr, and drr.
 
-## Task
-Getting Started
-Clone the start code:
-
-```bash
-Copy code
-git clone https://git.cs.kau.se/rasmoste/dvgb03.git
-Run ./bin/main --help to view available options. Refer to the README.md file for additional guidance.
-```
 ## Use available options
 ```
 $ ./bin/main --help
