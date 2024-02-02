@@ -1,6 +1,8 @@
 # uni-courses
 This repository serves as a centralized hub for organizing and showcasing my university coursework.
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vvijk)](https://github.com/anuraghazra/github-readme-stats)
+
 ## Courses
 
 Here is a list of courses included in this repository:
