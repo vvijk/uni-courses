@@ -38,10 +38,6 @@ Follow these steps to get the game up and running:
 
 Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-## Getting Started
-
-Follow these steps to get the Tic-Tac-Toe game up and running:
-
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/vvijk/uni-courses.git
