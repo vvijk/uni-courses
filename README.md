@@ -5,7 +5,7 @@ This repository serves as a centralized hub for organizing and showcasing some o
 
 Here is a list of courses included in this repository:
 
-1. **PROGRAMMING LANGUAGES (DVGC01)** [🔗](https://github.com/vvijk/uni-courses/tree/main/DVGC01-programsprak)
+1. **PROGRAMMING LANGUAGES (DVGC01)** [🔗](https://github.com/vvijk/uni-courses/tree/main/DVGC01)
    - **Course Overview:** This course provided an in-depth exploration of different programming languages, focusing on imperative, functional, and declarative paradigms. Object-oriented languages were also covered.
    - **Key Concepts:** The course covered syntax, semantics, grammar, lexical analysis, syntax analysis, and symbol tables. We got to dig into implementation aspects, including execution system implementation, memory management, stack management, and activation records.
    - **Labs:** During this course, practical application of theoretical concepts was demonstrated through engaging projects. One such project involved creating a Lisp program and a Prolog program designed to parse Pascal code.
