@@ -1,0 +1,38 @@
+﻿<ContentDialog
+    x:Class="Media_store.AddMovieDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Media_store"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Add a new movie">
+
+    <Grid>
+        <Grid.RowDefinitions  >
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="AddMovieErrorMessage" Foreground="Red"></TextBlock>
+        <TextBox Grid.Row="1" Margin="5" x:Name="AddMovieName" PlaceholderText="Name"></TextBox>
+        <TextBox Grid.Row="2" Margin="5" x:Name="AddMoviePrice" PlaceholderText="Price"></TextBox>
+        <TextBox Grid.Row="3" Margin="5" x:Name="AddMovieFormat" PlaceholderText="Format"></TextBox>
+        <TextBox Grid.Row="4" Margin="5" x:Name="AddMovieLength" PlaceholderText="Length"></TextBox>
+        <TextBox Grid.Row="5" Margin="5" x:Name="AddMovieAmount" PlaceholderText="How many?"></TextBox>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="6" HorizontalAlignment="Center" Spacing="50">
+            <Button Click="ContentDialogAddMovieButton_Click" x:Name="ContentDialogAddMovieButton">ADD</Button>
+            <Button Click="ContentDialogCancelMovieButton_Click" x:Name="ContentDialogCancelMovieButton">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</ContentDialog>

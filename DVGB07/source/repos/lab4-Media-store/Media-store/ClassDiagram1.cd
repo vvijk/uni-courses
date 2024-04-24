@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Media_store.BasketItem">
+    <Position X="6.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAABIAAAAAAEgAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>BasketItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Media_store.AddBookDialog">
+    <Position X="7.5" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>AddBookDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_store.Book">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAgAIAAAAAAAgAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Media_store.CSVHandler">
+    <Position X="10.75" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAFAGAgSAEBAAAIAAAAAAAAQAAAAAAggECAAIACAA=</HashCode>
+      <FileName>CSVHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Media_store.Game">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Media_store.Item">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAgAAAAAAAAQAAAACAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Media_store.Movie">
+    <Position X="4.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAgAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Movie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Media_store.AddGameDialog">
+    <Position X="4.5" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AddGameDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_store.AddMovieDialog">
+    <Position X="1.25" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AddMovieDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_store.AmountDialog">
+    <Position X="4.75" Y="9.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>AmountDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_store.BuyAmoutDialog">
+    <Position X="8" Y="9.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>BuyAmoutDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_store.CheckoutDialog">
+    <Position X="2.75" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAA=</HashCode>
+      <FileName>CheckoutDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_store.ChooseItemDialog">
+    <Position X="0.5" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAABAAAAAgAAAAAAAAAAE=</HashCode>
+      <FileName>ChooseItemDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_store.InventoryView">
+    <Position X="18" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAQAAAAAAAAAIgABAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>InventoryView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Media_store.MainPage">
+    <Position X="15.25" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIAACAAABAEAAEAAAAAAAAEAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

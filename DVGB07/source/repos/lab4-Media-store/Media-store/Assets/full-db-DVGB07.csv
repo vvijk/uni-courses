@@ -1,0 +1,19 @@
+Type,PID,Name,Price,Stock,Author,Genre,Format,Language,Platform,Length
+Book,1,Bello Gallico et Civili,349,8,Julius Caesar,Historia,Inbunden,Latin,,
+Book,2,How to Read a Book,29,19,Mortimer J. Adler,Study material,Pocket,,,
+Book,3,Moby Dick,19,16,Herman Melville,Adventure,Pocket,,,
+Book,4,Great Gatsby,29,27,F. Scott Fitzgerald,Noir,E-Book,,,
+Book,5,House of Leaves,59,31,Mark Z. Danielewski,Horror,,,,
+Game,6,Elden Ring,399,39,,,,,Playstation 5
+Game,7,Demon's Souls,459,13,,,,,Playstation 5
+Game,8,Microsoft Fligh Simulator,399,1,,,,,PC
+Game,9,Planescape Tornment,199,48,,,,,PC
+Game,10,Disco Elysium,349,41,,,,,PC
+Movie,11,Shawshank Redemption,99,0,,,DVD,,,142
+Movie,12,The Godfather,99,33,,,DVD,,,152
+Movie,13,Return of the King,259,28,,,Blue-Ray,,,154
+Movie,14,Pulp fiction,199,49,,,Blue-Ray,,,
+Movie,15,Schindlers list,99,39,,,DVD,,,
+Game,22,Counter-Strike,1337,-2,,,,,PC
+Movie,23,Bad Guys II,99,98,,,,,,120
+Movie,24,Mean girls,149,20,,,DVD,,,162

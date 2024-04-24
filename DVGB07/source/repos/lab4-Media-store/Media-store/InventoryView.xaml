@@ -1,0 +1,183 @@
+﻿<UserControl
+    x:Class="Media_store.InventoryView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Media_store"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="600"
+    d:DesignWidth="800">
+
+    <Grid Background="#2e2e2e" CornerRadius="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!--BOOK HEADER-->
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="4" Padding="15" FontWeight="ExtraBold" Foreground="GreenYellow" HorizontalAlignment="Center" VerticalAlignment="Center" TextDecorations="Underline">BOOKS</TextBlock>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="4" Padding="15" FontWeight="ExtraBold" Foreground="GreenYellow" HorizontalAlignment="Center" VerticalAlignment="Center" TextDecorations="Underline">__________________________________________________________</TextBlock>
+        
+        <Grid Grid.ColumnSpan="4" Grid.Row="1" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="116*"/>
+                <ColumnDefinition Width="79*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="1" FontSize="15" Foreground="WhiteSmoke">PID</TextBlock>
+            <TextBlock Grid.Column="2" FontSize="15" Foreground="WhiteSmoke">Name</TextBlock>
+            <TextBlock Grid.Column="3" FontSize="15" Foreground="WhiteSmoke">Price</TextBlock>
+            <TextBlock Grid.Column="4" FontSize="15" Foreground="WhiteSmoke">Author</TextBlock>
+            <TextBlock Grid.Column="5" FontSize="15" Foreground="WhiteSmoke">Genre</TextBlock>
+            <TextBlock Grid.Column="6" FontSize="15" Foreground="WhiteSmoke">Format</TextBlock>
+            <TextBlock Grid.Column="7" FontSize="15" Foreground="WhiteSmoke">Language</TextBlock>
+            <TextBlock Grid.Column="8" FontSize="15" Foreground="WhiteSmoke">Stock</TextBlock>
+        </Grid>
+        <!--BOOKS-->
+        <Grid Grid.ColumnSpan="4" Grid.Row="2" x:Name="BooksGrid" Background="#1f1f1f" Margin="5" CornerRadius="5">
+            <ListView Name="BookList">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Book">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                <ColumnDefinition Width="50"></ColumnDefinition>
+                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind PID}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="1" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Name}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="2" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Price}" Tapped="ListViewItem_Tapped">:-</TextBlock>
+                            <TextBlock Grid.Column="3" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Author}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="4" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Genre}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="5" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Format}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="6" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Language}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="7" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Stock}" Tapped="ListViewItem_Tapped"></TextBlock>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <!--GAME HEADER-->
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="4" Padding="15" FontWeight="ExtraBold" Foreground="GreenYellow" HorizontalAlignment="Center" VerticalAlignment="Center" TextDecorations="Underline">GAMES</TextBlock>
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="4" Padding="15" FontWeight="ExtraBold" Foreground="GreenYellow" HorizontalAlignment="Center" VerticalAlignment="Center" TextDecorations="Underline">__________________________________________________________</TextBlock>
+
+        <Grid Grid.ColumnSpan="4" Grid.Row="4" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="450"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="1" FontSize="15" Foreground="WhiteSmoke">PID</TextBlock>
+            <TextBlock Grid.Column="2" FontSize="15" Foreground="WhiteSmoke">Name</TextBlock>
+            <TextBlock Grid.Column="3" FontSize="15" Foreground="WhiteSmoke">Price</TextBlock>
+            <TextBlock Grid.Column="4" FontSize="15" Foreground="WhiteSmoke">Platform</TextBlock>
+            <TextBlock Grid.Column="5" FontSize="15" Foreground="WhiteSmoke">Stock</TextBlock>
+        </Grid>
+        <!--Games-->
+        <Grid Grid.ColumnSpan="4" Grid.Row="5" x:Name="GamesGrid" Background="#1f1f1f" Margin="5" CornerRadius="5">
+            <ListView Name="GameList">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Game">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                <ColumnDefinition Width="50"></ColumnDefinition>
+                                <ColumnDefinition Width="450"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind PID}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="1" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Name}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="2" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Price}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="3" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Platform}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="4" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Stock}" Tapped="ListViewItem_Tapped"></TextBlock>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <!--MOVIE HEADER-->
+        <TextBlock Grid.Row="6" Grid.ColumnSpan="4" Padding="15" FontWeight="ExtraBold" Foreground="GreenYellow" HorizontalAlignment="Center" VerticalAlignment="Center" TextDecorations="Underline">MOVIES</TextBlock>
+        <TextBlock Grid.Row="6" Grid.ColumnSpan="4" Padding="15" FontWeight="ExtraBold" Foreground="GreenYellow" HorizontalAlignment="Center" VerticalAlignment="Center" TextDecorations="Underline">__________________________________________________________</TextBlock>
+
+        <Grid Grid.ColumnSpan="4" Grid.Row="7" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="350"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="1" FontSize="15" Foreground="WhiteSmoke">PID</TextBlock>
+            <TextBlock Grid.Column="2" FontSize="15" Foreground="WhiteSmoke">Name</TextBlock>
+            <TextBlock Grid.Column="3" FontSize="15" Foreground="WhiteSmoke">Price</TextBlock>
+            <TextBlock Grid.Column="4" FontSize="15" Foreground="WhiteSmoke">Format</TextBlock>
+            <TextBlock Grid.Column="5" FontSize="15" Foreground="WhiteSmoke">Length</TextBlock>
+            <TextBlock Grid.Column="6" FontSize="15" Foreground="WhiteSmoke">Stock</TextBlock>
+        </Grid>
+        <!--Movies-->
+        <Grid Grid.ColumnSpan="4" Grid.Row="8" x:Name="MoviesGrid" Background="#1f1f1f" Margin="5" CornerRadius="5">
+            <ListView Name="MovieList">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Movie">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                <ColumnDefinition Width="50"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="350"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind PID}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="1" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Name}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="2" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Price}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="3" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Format}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="4" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Length}" Tapped="ListViewItem_Tapped"></TextBlock>
+                            <TextBlock Grid.Column="5" Padding="10" Foreground="WhiteSmoke" Text="{x:Bind Stock}" Tapped="ListViewItem_Tapped"></TextBlock>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Grid>
+</UserControl>

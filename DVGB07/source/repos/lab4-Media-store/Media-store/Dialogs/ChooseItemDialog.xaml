@@ -1,0 +1,23 @@
+﻿<ContentDialog
+    x:Class="Media_store.ChooseItemDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Media_store"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Choose Item to add">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Click="AddBookDialog_Click" Grid.Column="0" HorizontalAlignment="Center">Book</Button>
+        <Button Grid.Row="0" Click="AddGameDialog_Click" Grid.Column="1" HorizontalAlignment="Center">Game</Button>
+        <Button Grid.Row="0"  Click="AddMovieDialog_Click" Grid.Column="2" HorizontalAlignment="Center">Movie</Button>
+
+    </Grid>
+</ContentDialog>

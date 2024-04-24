@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="Calculator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    
+    <Viewbox>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+ 
+            <!--NUMBERS-->
+            <Button Click="Number_Button" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">1</Button>
+            <Button Click="Number_Button" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">4</Button>
+            <Button Click="Number_Button" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">7</Button>
+            <Button Click="Number_Button" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="10">2</Button>
+            <Button Click="Number_Button" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">3</Button>
+            <Button Click="Number_Button" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">5</Button>
+            <Button Click="Number_Button" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">6</Button>
+            <Button Click="Number_Button" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">8</Button>
+            <Button Click="Number_Button" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">9</Button>
+            <Button Click="Number_Button" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">0</Button>
+
+            <Button Click="Clear_Button" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">C</Button>
+
+            <!--OPERATORS-->
+            <Button Click="Button_Click_Equal" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">=</Button>
+            <Button Click="Button_Click_Addition" Grid.Column="3" Grid.Row="1" Background="DarkOrange" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">+</Button>
+            <Button Click="Button_Click_Subtraction" Grid.Column="3" Grid.Row="2" Background="DarkOrange" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">-</Button>
+            <Button Click="Button_Click_Mult" Grid.Column="3" Grid.Row="3" Background="DarkOrange" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">x</Button>
+            <Button Click="Button_Click_Divide" Grid.Column="3" Grid.Row="4" Background="DarkOrange" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="15">÷</Button>
+
+            <!--INPUT/OUTPUT-->
+            <Border CornerRadius="15" Background="Gray" Grid.ColumnSpan="3">
+                <TextBlock x:Name="display" Grid.Row="0" FontSize="24" TextAlignment="Right" VerticalAlignment="Center" Margin="5"></TextBlock>
+            </Border>
+
+            <Border CornerRadius="15" Background="Gray" Grid.Column="3">
+                <TextBlock x:Name="displayPrevious" Grid.Row="0" FontSize="12" TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            </Border>
+
+        </Grid>
+
+    </Viewbox>
+</Page>

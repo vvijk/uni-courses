@@ -1,0 +1,34 @@
+﻿<ContentDialog
+    x:Class="Media_store.AddGameDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Media_store"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Add a new game">
+
+    <Grid>
+        <Grid.RowDefinitions  >
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="AddGameErrorMessage" Foreground="Red"></TextBlock>
+        <TextBox Grid.Row="1" Margin="5" x:Name="AddGameName" PlaceholderText="Name"></TextBox>
+        <TextBox Grid.Row="2" Margin="5" x:Name="AddGamePrice" PlaceholderText="Price"></TextBox>
+        <TextBox Grid.Row="3" Margin="5" x:Name="AddGamePlatform" PlaceholderText="Platform"></TextBox>
+        <TextBox Grid.Row="4" Margin="5" x:Name="AddGameAmount" PlaceholderText="How many?"></TextBox>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="5" HorizontalAlignment="Center" Spacing="50">
+            <Button Click="ContentDialogAddGameButton_Click" x:Name="ContentDialogAddGameButton">ADD</Button>
+            <Button Click="ContentDialogCancelGameButton_Click" x:Name="ContentDialogCancelGameButton">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</ContentDialog>

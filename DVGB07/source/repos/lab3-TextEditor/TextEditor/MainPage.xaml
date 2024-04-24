@@ -1,0 +1,87 @@
+﻿<Page
+    x:Class="TextEditor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Page.Resources>
+        <!-- TextArea styling -->
+        <Style x:Key="TextBoxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="#1E1E1E"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="InputScope" Value="Text"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="Padding" Value="25"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="Foreground" Value="White"/>
+            
+            <!--This is to get rid of the standard mouse hover effect that the TextBox has.-->
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border x:Name="BorderElement"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="{TemplateBinding CornerRadius}">
+
+                            <ScrollViewer x:Name="ContentElement"
+                                          Padding="{TemplateBinding Padding}"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- TopBar -->
+        <CommandBar Grid.Row="0" IsSticky="True" HorizontalAlignment="Stretch" Background="#1E1E1E" Foreground="#E1E1E1">
+            <AppBarButton Icon="OpenFile" Label="Open" Click="OpenFile" Foreground="#E1E1E1"/>
+            <AppBarButton Icon="SaveLocal" Label="Save As" Click="SaveAsButton" Foreground="#E1E1E1"/>
+            <AppBarButton Icon="Save" Label="Save" Click="SaveButton" Foreground="#E1E1E1"/>
+            <AppBarButton Icon="Clear" Label="Clear" Click="Clear" Foreground="#E1E1E1"/>
+
+            <CommandBar.Content>
+                <TextBlock Name="CommandContent0" Foreground="#E1E1E1"></TextBlock>
+            </CommandBar.Content>
+          
+        </CommandBar>
+
+        <!-- TextArea -->
+        <ScrollViewer Grid.Row="1" Background="#121212">
+            <TextBox Name="TextArea" Style="{StaticResource TextBoxStyle}"
+                     TextChanged="TextArea_TextChanged"
+                     KeyDown="TextArea_KeyDown"
+                     AcceptsReturn="True"
+                     AllowDrop="True"
+                     DragEnter="TextArea_DragEnter"
+                     Drop="TextArea_Drop">
+            </TextBox>
+        </ScrollViewer>
+
+        <!-- Bottom Bar -->
+        <Grid Grid.Row="2" Height="30" Background="#1E1E1E">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="StatusText0" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#E1E1E1" Grid.Column="0" Text="Characters without spaces: 0"/>
+            <TextBlock Name="StatusText1" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#E1E1E1" Grid.Column="1" Text="Characters with spaces: 0"/>
+            <TextBlock Name="StatusText2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#E1E1E1" Grid.Column="2" Text="Words: 0"/>
+            <TextBlock Name="StatusText3" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#E1E1E1" Grid.Column="3" Text="Rows: 0"/>
+        </Grid>
+
+    </Grid>
+</Page>

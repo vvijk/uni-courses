@@ -1,0 +1,94 @@
+﻿<Page
+    x:Class="JuansLottery.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JuansLottery"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="Gray"/>
+        <Border Grid.Row="1" Background="Gray"/>
+        <Border Grid.Row="2" Background="Gray"/>
+        <Border Grid.Row="3" Background="Gray"/>
+
+        <Viewbox Grid.Row="0">
+            <TextBlock 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontWeight="Bold">Juans Casino</TextBlock>
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Stretch="Uniform">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock FontSize="24" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">Your lucky numbers (1-35):</TextBlock>
+
+                <StackPanel Grid.Row="1"
+                    Orientation="Horizontal">
+                    <TextBox PlaceholderText="1" InputScope="Number" Width="auto" Margin="5" Name="lott0" BorderBrush="White" CornerRadius="5"/>
+                    <TextBox PlaceholderText="2" InputScope="Number" Width="auto" Margin="5" Name="lott1" BorderBrush="White" CornerRadius="5"/>
+                    <TextBox PlaceholderText="3" InputScope="Number" Width="auto" Margin="5" Name="lott2" BorderBrush="White" CornerRadius="5"/>
+                    <TextBox PlaceholderText="4" InputScope="Number" Width="auto" Margin="5" Name="lott3" BorderBrush="White" CornerRadius="5"/>
+                    <TextBox PlaceholderText="5" InputScope="Number" Width="auto" Margin="5" Name="lott4" BorderBrush="White" CornerRadius="5"/>
+                    <TextBox PlaceholderText="6" InputScope="Number" Width="auto" Margin="5" Name="lott5" BorderBrush="White" CornerRadius="5"/>
+                    <TextBox PlaceholderText="7" InputScope="Number" Width="auto" Margin="5" Name="lott6" BorderBrush="White" CornerRadius="5"/>
+                </StackPanel>
+            </Grid>
+        </Viewbox>
+
+
+        <Viewbox Grid.Row="2" Stretch="Uniform">
+            <StackPanel Grid.Row="2"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal">
+                <TextBlock FontSize="24" Margin="20, 0" FontWeight="Bold">Number of drawings:</TextBlock>
+                <TextBox InputScope="Number" Name="antalDragningar" Width="200" Margin="20, 0" BorderBrush="White" CornerRadius="5"/>
+                <Button Click="Button_Click" Margin="20, 0" CornerRadius="5" BorderBrush="White" Width="100" Foreground="Black">Play!</Button>
+            </StackPanel>
+        </Viewbox>
+
+        <Viewbox Grid.Row="3" Stretch="None">
+            <StackPanel
+                    Orientation="Horizontal">
+                <TextBlock FontSize="24" FontWeight="Bold">5 correct:</TextBlock>
+                <Border BorderBrush="White" BorderThickness="5" CornerRadius="5" Margin="20,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="24" Name="fem" Margin="20, 0">-</TextBlock>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock FontSize="24" FontWeight="Bold">6 correct:</TextBlock>
+                <Border BorderBrush="White" BorderThickness="5" CornerRadius="5" Margin="20,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="24" Name="sex" Margin="20, 0">-</TextBlock>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock FontSize="24" FontWeight="Bold">7 correct:</TextBlock>
+                <Border BorderBrush="White" BorderThickness="5" CornerRadius="5" Margin="20,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="24" Name="sju" Margin="20, 0">-</TextBlock>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+
+</Page>
